@@ -26,6 +26,7 @@ public class ConsoleExercises {
         //Prompt a user to enter 3 words, and store each of them in a separate
         // variable. Then, display them back in the console, each on a newline.
         //
+
         System.out.println("Please enter 3 words?");
         String userWord1 = scanner.next();
         System.out.println("You entered:\"" + userWord1 + "\"");
@@ -41,11 +42,40 @@ public class ConsoleExercises {
         //Prompt a user to enter a sentence, then store that sentence in a String
         // variable using the next method. Then, display that sentence back to the user.
         //
+//        System.out.println("Please enter a sentence?");
+//        String userSentence = scanner.next();
+//        System.out.println("You entered:\"" + userSentence + "\"");
+        //do you capture all the words? No
+        //*****************************Q3***********************************//
+
+        //*****************************Q4***********************************//
+        //Rewrite the above example using the nextLine method.
         System.out.println("Please enter a sentence?");
         String userSentence = scanner.nextLine();
         System.out.println("You entered:\"" + userSentence + "\"");
+        //*****************************Q4***********************************//
 
-        //do you capture all the words?
-        //*****************************Q3***********************************//
+        //*****Calculate the perimeter and area of Codeup's classrooms*****//
+        //*****************************Q1***********************************//
+        //Prompt the user to enter values of length and width of a classroom at
+        // Codeup (or your room if virtual).
+        //
+        //Use the nextLine method each time you need to get user input.
+        // In this case, we need it twice, once to get the user input for the
+        // length and again to get the user input for the width. Parse the
+        // resulting strings to a numeric type.
+        //
+        //Assume that the rooms are perfect rectangles.
+        //Assume that the user will enter valid numeric data for length and width.
+
+        System.out.println("Please enter length and width values of a room?");
+        System.out.println("What is the length of you room?");
+        int roomLength = scanner.nextInt();
+        System.out.println("What is the width of your room?");
+        int roomWidth = scanner.nextInt();
+//        public static int parseInt(String s);
+
+        //*****************************Q1***********************************//
+
     }
 }
