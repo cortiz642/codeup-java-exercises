@@ -38,8 +38,12 @@ public class ConsoleExercises {
         //*****************************Q2***********************************//
 
         //*****************************Q3***********************************//
-        //Prompt a user to enter a sentence, then store that sentence in a String variable using the next method. Then, display that sentence back to the user.
+        //Prompt a user to enter a sentence, then store that sentence in a String
+        // variable using the next method. Then, display that sentence back to the user.
         //
+        System.out.println("Please enter a sentence?");
+        String userSentence = scanner.nextLine();
+        System.out.println("You entered:\"" + userSentence + "\"");
 
         //do you capture all the words?
         //*****************************Q3***********************************//
