@@ -38,14 +38,17 @@ public class ControlFlowExercises {
         // squared on each line while the number is less than 1,000,000. Output
         // should equal:
 
-        int i = 0;
-
-        do{
-            System.out.println(i % 2 = 1);
-            i++;
-        }while (i <= 100);
+//        int i = 0;
+//
+//        do{
+//            System.out.println(i);
+//            i++;
+//        }while (i <= 100);
 
 
         //*****************************Q1.b***********************************//
+
+        //*****************************Q1.c***********************************//
+
     }
 }
