@@ -1,4 +1,5 @@
 package util;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Input {
@@ -13,8 +14,12 @@ public class Input {
     public boolean yesNo(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Continue? [y/N] ");
-        String userInput = sc.next();
-        System.out.println("you typed:\"" + userInput + "\"" );
+            String userInput = sc.next();
+        if(Objects.equals(userInput, "y")) {
+            System.out.println("true");
+        }else {
+            System.out.println("false");
+        }
         return Boolean.parseBoolean(scanner.nextLine());
     }
     public Input() {
@@ -22,11 +27,10 @@ public class Input {
     }
 
     public static void main(String[] args) {
-    Input Getstring = new Input();
-    Getstring.getString();
-    Input yesNo = new Input();
-    yesNo.yesNo();
-
+        Input Getstring = new Input();
+        Getstring.getString();
+        Input yesNo = new Input();
+        yesNo.yesNo();
     }
     }
 
