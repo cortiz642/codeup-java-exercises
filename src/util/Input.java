@@ -22,6 +22,14 @@ public class Input {
         }
         return Boolean.parseBoolean(scanner.nextLine());
     }
+    public int getInt(int min, int max) {
+        System.out.println("Please enter integer:");
+        int userInput = scanner.nextInt();
+        if (userInput != min) {
+            System.out.println("Please enter integer:");
+        }
+        return scanner.nextInt();
+    }
     public Input() {
         this.scanner = new Scanner(System.in);
     }
@@ -31,6 +39,8 @@ public class Input {
         Getstring.getString();
         Input yesNo = new Input();
         yesNo.yesNo();
+        Input getIn = new Input();
+        getIn.getInt(int min, int max);
     }
     }
 
