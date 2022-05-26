@@ -40,7 +40,7 @@ public class Input {
         Input yesNo = new Input();
         yesNo.yesNo();
         Input getIn = new Input();
-        getIn.getInt(int min, int max);
+//        getIn.getInt(int min, int max);
     }
     }
 

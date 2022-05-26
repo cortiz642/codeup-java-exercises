@@ -17,22 +17,23 @@ import javax.swing.*;
      */
 //}
 //Exercises Syntax,Types,and Variables q1-4
-public class HelloWorld { //line:20 assigns a class of HelloWorld
-    public static void main(String[] args) { //
-    int myFavoriteNumber = 9;
-    System.out.println(myFavoriteNumber);
-//    String myString = "Java";
-//    System.out.println('myString');
-        String myString = "3.14159";
-        System.out.println(myString);
+//public class HelloWorld { //line:20 assigns a class of HelloWorld
+//    public static void main(String[] args) { //
+//    int myFavoriteNumber = 9;
+//    System.out.println(myFavoriteNumber);
+////    String myString = "Java";
+////    System.out.println('myString');
+//        String myString = "3.14159";
+//        System.out.println(myString);
         //******************************************************************//
         //**Q5.Declare an long variable named myNumber, but do not assign anything
         // to it. Next try to print out myNumber to the console. What happens?**
         //******************************************************************//
-
+//        long myNumber;
+//        System.out.println(myNumber);
         //Shows variable "myNumber" is not initialized meaning "myNumber variable
         //needs a value in order to run
-//        long myNumber;
+//        long myNumber=12;
 //        System.out.println(myNumber);
 
         //******************************************************************//
@@ -65,8 +66,9 @@ public class HelloWorld { //line:20 assigns a class of HelloWorld
         //Q9.Change your code to declare myNumber as a float. Assign the value
         // 3.14 to it. What happens? What are two ways we could fix this?
         //******************************************************************//
+//            float myNumber = (float) 3.14;
 
         //******************************************************************//
         //******************************************************************//
-    }
-}
+//    }
+//}
