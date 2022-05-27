@@ -35,7 +35,7 @@ public class ArraysExercises {
         // the array.
 
         //created static method named addPerson
-        static String addPerson(String[] Person= new String[0]);
+//        static String addPerson(String[] Person= new String[0]);
 
         //
     }
