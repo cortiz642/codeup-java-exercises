@@ -14,14 +14,12 @@ public class Rectangle {
 
 
     //Created getArea method
-        public int getArea(){
-            int area;
-            return area = (int)(2 * length + 2 * width);
+        public double getArea(){
+            return length * length;
         }
         //Created getPerimeter method
-        public int getPerimeter(){
-            int perimeter;
-           return perimeter = (int) (2 * length + 2 * width);
+        public double getPerimeter(){
+           return 2 * (length + width);
         }
 
 }
