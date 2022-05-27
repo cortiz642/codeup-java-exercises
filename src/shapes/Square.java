@@ -1,19 +1,33 @@
+
 package shapes;
 //Created a class named Square inside of shapes
 //which extends Rectangle
 public class Square extends Rectangle{
-    public int side;
-        public Square(double length, double width, int side) {
-        super(length, width);
-        this.side = side;
-//        Rectangle rectangle = new Rectangle();
+    protected double side;
+        public Square(double side) {
+        super(side, side);
+
+    }
+    //seperate instance of setclass
+        @Override
+        public double getArea(){
+            return side * side;
+        }
+
+    //seperate instance of setclass
+        @Override
+        public double getPerimeter(){
+            return 4 * side;
+            }
+
+    public double getSide() {
+            return 8 * side;
     }
 
-
-
-
+//    public int getSide() {
+//        return 0;
+//    }
 }
 
 
-//    public Square(double length, double width) {
-//        super(length, width);
+
