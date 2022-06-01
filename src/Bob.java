@@ -7,6 +7,7 @@ public class Bob {
         String userInput = sc.next();
 //        System.out.println("Who?");
 //        String userInput = sc.next();
+        String input = new String();
         boolean ask = input.endsWith("?");
 
         boolean exclamation = input.endsWith("!");
