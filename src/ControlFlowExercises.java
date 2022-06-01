@@ -3,6 +3,13 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
+        try {
+            System.out.println("Let's see...");
+            int result = 1 / 0;
+            System.out.println("I can divide by zero!");
+        } catch (ArithmeticException e) {
+            System.out.println("Math still works!");
+        }
 //        for (int i = 1; i <= 10; i++) { // <--+
 //            if (i % 2 == 1) { //              |
 //                continue; // ----------------+
