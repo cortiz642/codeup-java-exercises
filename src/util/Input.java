@@ -24,9 +24,13 @@ public class Input {
     }
     public int getInt(int min, int max) {
         System.out.println("Please enter integer:");
-        int userInput = scanner.nextInt();
+//        int one = Integer.parseInt(getString());
+//        int userInput = scanner.nextInt();
+        int userInput = Integer.parseInt(getString());
         if (userInput != min) {
-            System.out.println("Please enter integer:");
+//            System.out.println("Please enter integer:");
+        }else{
+//            System.out.println("You entered:" + userInput);
         }
         return scanner.nextInt();
     }
@@ -35,12 +39,12 @@ public class Input {
     }
 
     public static void main(String[] args) {
-        Input Getstring = new Input();
-        Getstring.getString();
+        Input getString = new Input();
+        getString.getString();
         Input yesNo = new Input();
         yesNo.yesNo();
-        Input getIn = new Input();
-//        getIn.getInt(int min, int max);
+        Input getInt = new Input();
+        getInt.getInt(10, 30);
     }
     }
 
