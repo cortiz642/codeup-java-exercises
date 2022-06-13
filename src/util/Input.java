@@ -34,6 +34,20 @@ public class Input {
         }
         return scanner.nextInt();
     }
+    public int getInt(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Type an integer?");
+        String user = scanner.nextLine();
+        System.out.println("You type: " + user);
+        return scanner.nextInt();
+    }
+    public double getDouble(double min, double max){
+        Double myMinDoubleValue = Double.MIN_VALUE;
+        Double myMaxDoubleValue = Double.MAX_VALUE;
+        System.out.println("Double minimum value = " + myMinDoubleValue);
+        System.out.println("Double maximum value = " + myMaxDoubleValue);
+        return scanner.nextDouble();
+    }
     public Input() {
         this.scanner = new Scanner(System.in);
     }
