@@ -1,5 +1,9 @@
 package movies;
 
+import util.Input;
+
+import static movies.MoviesArray.findAll;
+
 public class MoviesApplication {
 
     public static void main(String[] args) {
@@ -19,21 +23,58 @@ public class MoviesApplication {
         }else if(userInput.equals("1")){
             Movie[] mList = findAll();
             for(Movie pMovie:mList){
-                System.out.println();
+                System.out.println(pMovie.getName() + " -- " + pMovie.getCategory());
             }
             repeat();
         }
-//    }else if(userInput.equals("2")){
-//
-//    }else if(userInput.equals("3")){
-//
-//    }else if(userInput.equals("4")){
-//
-//    }else if(userInput.equals("5")){
-//
+    }else if(userInput.equals("2"))
+    {
+        Movie[] mList = findAll();
+        for (Movie pMovie : mList) {
+            if (pMovie.getCategory().equals("animated")) {
+                System.out.println(pMovie.getName() + " -- " + pMovie.getCategory());
+            } else {
+                continue;
+            }
+        }
+        repeat();
+    }else if(userInput.equals("3"))
+    {
+        Movie[] mList = findAll();
+        for (Movie pMovie : mList) {
+            if (pMovie.getCategory().equals("animated")) {
+                System.out.println(pMovie.getName() + " -- " + pMovie.getCategory());
+            } else {
+                continue;
+            }
+        }
+        repeat();
+    }else if(userInput.equals("4"))
+    {
+        Movie[] mList = findAll();
+        for (Movie pMovie : mList) {
+            if (pMovie.getCategory().equals("animated")) {
+                System.out.println(pMovie.getName() + " -- " + pMovie.getCategory());
+            } else {
+                continue;
+            }
+        }
+        repeat();
+    }else if(userInput.equals("5"))
+    {
+        Movie[] mList = findAll();
+        for (Movie pMovie : mList) {
+            if (pMovie.getCategory().equals("animated")) {
+                System.out.println(pMovie.getName() + " -- " + pMovie.getCategory());
+            } else {
+                continue;
+            }
+        }
+        repeat();
     }
 
-        private staic void (repeat){
+
+        private static void (repeat){
         System.out.println("------------");
         System.out.println("NAVIGATION");
         System.out.println("0-exit 1-all 2-animated 3-drama 4-horror 5-scifi");
