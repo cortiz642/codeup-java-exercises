@@ -38,41 +38,38 @@ public class morningWarmup<i> {
 //constructor of the scanner class
 
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number: ");
-        //reads an integer from the user
-        int n = sc.nextInt();
-        System.out.println("The Fizz, Buzz, and FizzBuzz numbers are: ");
-//for loop executes until the condition i<=n becomes false
-        for (int i = 1; i <= 100; i++) {
-//returns true if both the conditions return true
-            if (i % 3 == 0 && i % 5 == 0) {
-//prints if the number is multiple of 3 and 5
-                System.out.print("FizzBuzz");
-            }
-//executes if the condition returns true
-            else if (i % 3 == 0) {
-//prints if the number is multiple of 3
-                System.out.print("Fizz");
-            }
-//executes if the condition returns true
-            else if (i % 5 == 0) {
-//prints if the number is multiple of 5
-                System.out.print("Buzz");
-            } else {
-//prints the number itself if the number is not divisible by both 3 and 5
-                System.out.print(i);
-            }
-//prints space
-            System.out.print("," + " ");
-        }
-//        close the Scanner
-        sc.close();
-    }
-}
-
-
-
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the number: ");
+//        //reads an integer from the user
+//        int n = sc.nextInt();
+//        System.out.println("The Fizz, Buzz, and FizzBuzz numbers are: ");
+////for loop executes until the condition i<=n becomes false
+//        for (int i = 1; i <= 100; i++) {
+////returns true if both the conditions return true
+//            if (i % 3 == 0 && i % 5 == 0) {
+////prints if the number is multiple of 3 and 5
+//                System.out.print("FizzBuzz");
+//            }
+////executes if the condition returns true
+//            else if (i % 3 == 0) {
+////prints if the number is multiple of 3
+//                System.out.print("Fizz");
+//            }
+////executes if the condition returns true
+//            else if (i % 5 == 0) {
+////prints if the number is multiple of 5
+//                System.out.print("Buzz");
+//            } else {
+////prints the number itself if the number is not divisible by both 3 and 5
+//                System.out.print(i);
+//            }
+////prints space
+//            System.out.print("," + " ");
+//        }
+////        close the Scanner
+//        sc.close();
+//    }
+//}
 
 
 //    Create a method that accepts a string of space separated numbers and
@@ -81,3 +78,29 @@ public class morningWarmup<i> {
 //        expected output: "5 1"
 //        example input: "1 9 3 4 -5"
 //        expected output: "-5 9"
+
+
+//Given an array of ints, return true if the array contains two 7's next to each other, or there are two 7's separated by one element, such as with {7, 1, 7}.
+//
+
+    }
+
+    public boolean num(int[] nums) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] == 7 && (nums[i + 1] == 7 || (i < nums.length - 2 && nums[i + 2] == 7)))
+                return true;
+        }
+        return false;
+    }
+}
+
+
+
+//example input: [1, 7, 7]
+//expected output: true
+//
+//example input: [1, 7, 1, 7]
+//expected output: true
+//
+//example input: [2,7,8]
+//expected output: false
